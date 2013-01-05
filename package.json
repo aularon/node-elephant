@@ -1,0 +1,36 @@
+{
+  "version": "0.1.0",
+  "name": "elephant",
+  "description": "A fast & memory-efficient data structure that cat tell if it saw a string before",
+  "main": "build/Release/elephant.node",
+  "scripts": {
+    "test": "make test-time",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aularon/node-elephant.git"
+  },
+  "keywords": [
+    "native",
+    "addon",
+    "c++",
+    "data-structure",
+    "sparsehash",
+    "MurmurHash",
+    "memory"
+  ],
+  "author": "Hasan Arous <arous.hasan@gmail.com>",
+  "licenses": [
+    {
+      "type": "MPL",
+      "url": "http://www.mozilla.org/MPL/2.0/"
+    }
+  ],
+  "gypfile": true,
+  "readmeFilename": "README.md",
+  "gitHead": "fe29ce7d8fe3fe7f89c64e7a9b49b15c5f143ef6",
+  "directories": {
+    "test": "test"
+  }
+}
