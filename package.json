@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0-1",
+  "version": "0.1.0-2",
   "name": "elephant",
   "description": "A fast & memory-efficient data structure that cat tell if it saw a string before",
   "main": "build/Release/elephant.node",
