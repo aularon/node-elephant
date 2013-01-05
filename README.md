@@ -1,7 +1,8 @@
-node-elephant
+[node-elephant](https://github.com/aularon/node-elephant)
 =============
 
 ![Elephant Logo](https://raw.github.com/aularon/node-elephant/master/doc/logo.png)
+
 
 A fast & memory-efficient data structure that cat tell if it saw a string before
 
