@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.0-1",
   "name": "elephant",
   "description": "A fast & memory-efficient data structure that cat tell if it saw a string before",
   "main": "build/Release/elephant.node",
@@ -17,7 +17,7 @@
     "c++",
     "data-structure",
     "sparsehash",
-    "MurmurHash",
+    "murmurhash",
     "memory"
   ],
   "author": "Hasan Arous <arous.hasan@gmail.com>",
