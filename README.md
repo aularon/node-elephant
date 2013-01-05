@@ -5,8 +5,25 @@ node-elephant
 
 A fast &amp; memory-efficient data structure that cat tell if it saw a string before
 
+## Summary
+In case you need a fast, memory-efficient data structure that would remember whether or not it had seen a string before, for example you are running through a list of filename with possible duplicates that you do not want to double-process, or through long list of emails/GUIDs with possible duplicate that you wanna deal with, here is the module for you.
+
+The Node.js/c++ binding is 2/3 times faster, and uses 6 times less memory than a JavaScript implementation.
+The pure c++ is even faster and uses 8 times less memory than the nodejs binding, that is 200% faster than pure JavaScript, and 50 times (5000%) more memory-efficient*. Check the [Time Table](#time-table) for details.
+
+_* For some reason arguments passed from JavaScript to c++ lingers in memory, if you have a way to set them free let me know_
+
 ## Prerequisites
-You will need [google sparsehash](https://code.google.com/p/sparsehash/downloads/list), under ubuntu you can do `sudo apt-get install sparsehash`.
+You will need [google sparsehash](https://code.google.com/p/sparsehash/downloads/list), under Ubuntu you can do `sudo apt-get install sparsehash`.
+
+## Usage
+Check the test/time-binding.js file for an example usage.
+
+## API
+* `bool .memorize("string")` tells the elephant to memorize a string, returns `true` if the string was seen before, and `false` otherwise.
+* `bool .remember("string")` ask the elephant whether it remembers a string (has seen, aka told to memorize that string before), returns `true` if the string was seen before, and `false` otherwise.
+* `object .stats()` returns some stats.
+
 
 ## Time Table
 Numbers between (brackets) refer to the difference between current cell value and the one to its left.
